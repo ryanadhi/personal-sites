@@ -1,5 +1,7 @@
 import Image from "next/image";
 import MainContainer from "../components/MainContainer";
+import type { Metadata } from "next";
+import baseMetadata from "../layout";
 
 const experiences = [
   {
@@ -24,6 +26,13 @@ const experiences = [
     title: "Web Developer",
   },
 ];
+
+export const metadata: Metadata = {
+  ...baseMetadata,
+  title: "Ryan | Experiences",
+  description:
+    "Discover Ryan's professional journey and expertise in fullstack development.",
+};
 
 const ExperiencePage = () => {
   return (

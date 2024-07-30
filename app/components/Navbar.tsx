@@ -1,13 +1,11 @@
-"use client";
- 
-
 import Link from "next/link";
 import NavLink from "./Navlink";
+
 const links = [
-  // { url: "/", title: "Home" },
   { url: "/experiences", title: "Experiences" },
   { url: "/contact", title: "Contact" },
 ];
+
 
 const Navbar = () => {
 
