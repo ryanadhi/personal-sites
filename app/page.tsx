@@ -1,5 +1,6 @@
-// import Image from "next/image";
-// import Navbar from "./components/Navbar";
+"use client";
+
+import { sendGAEvent } from "@next/third-parties/google";
 import Link from "next/link";
 import MainContainer from "./components/MainContainer";
 
@@ -26,21 +27,26 @@ export default function Home() {
           </span>
         </h1>
         <p>
-        As a geophysicist turned fullstack developer with 4 years of experience. My expertise in ReactJS, Node.js, and PostgreSQL, combined with my background in geophysics where I honed my skills in data analysis and problem-solving, allows me to build intuitive and engaging web applications. I am proactive and driven, with excellent communication and collaboration skills. My passion for continuous learning and innovation ensures that I am always improving in my role.
+          As a geophysicist turned fullstack developer with 4 years of
+          experience. My expertise in ReactJS, Node.js, and PostgreSQL, combined
+          with my background in geophysics where I honed my skills in data
+          analysis and problem-solving, allows me to build intuitive and
+          engaging web applications. I am proactive and driven, with excellent
+          communication and collaboration skills. My passion for continuous
+          learning and innovation ensures that I am always improving in my role.
         </p>
       </div>
-      {/* <div className="my-4">
-        <strong>Skills</strong>
-        <div className="flex gap-4 flex-wrap mt-4">
-          {skills.map((skill, i) => {
-            return <div key={i}
-            className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">{skill}</div>;
-          })}
-        </div>
-      </div> */}
       <div className="mt-4">
         <Link href="/experiences">
-          <button className="group flex items-center gap-2 border border-slate-200 rounded-md px-4 py-2 bg-slate-200 hover:bg-slate-100 text-slate-950 hover:text-slate-950">
+          <button
+            className="group flex items-center gap-2 border border-slate-200 rounded-md px-4 py-2 bg-slate-200 hover:bg-slate-100 text-slate-950 hover:text-slate-950"
+            onClick={() => {
+              const consent = localStorage.getItem("analytics_consent");
+              if (consent === "true" && window.dataLayer) {
+                sendGAEvent({ event: "cta_clicked", path: "/experiences" });
+              }
+            }}
+          >
             More about me
             <span className="inline-block group-hover:translate-x-2 transition-transform">
               <svg

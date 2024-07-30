@@ -1,3 +1,6 @@
+"use client";
+
+import { sendGTMEvent } from "@next/third-parties/google";
 import Link from "next/link";
 import Image from "next/image";
 import MainContainer from "../components/MainContainer";
@@ -71,6 +74,15 @@ const ContactPage = () => {
           <div className="flex flex-col gap-2">
             {socialMedias.map((socialMedia, index) => (
               <Link
+                onClick={() => {
+                  const consent = localStorage.getItem("analytics_consent");
+                  if (consent === "true" && window.dataLayer) {
+                    sendGTMEvent({
+                      event: "social_media_click",
+                      social_media: socialMedia.label,
+                    });
+                  }
+                }}
                 key={index}
                 href={socialMedia.link}
                 className="group flex items-center gap-4 hover:bg-slate-100 px-4 py-2 rounded-md w-fit"
