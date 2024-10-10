@@ -3,30 +3,31 @@
 import { sendGAEvent } from "@next/third-parties/google";
 import Link from "next/link";
 import MainContainer from "./components/MainContainer";
+import PersonalProject from "./components/modules/PersonalProject";
 
-const skills = [
-  "Javascript",
-  "Nextjs",
-  "Reactjs",
-  "Tailwind",
-  "HTML",
-  "CSS",
-  "Nodejs",
-  "PostgreSQL",
-  "Spring Boot",
-];
+// const skills = [
+//   "Javascript",
+//   "Nextjs",
+//   "Reactjs",
+//   "Tailwind",
+//   "HTML",
+//   "CSS",
+//   "Nodejs",
+//   "PostgreSQL",
+//   "Spring Boot",
+// ];
 
 export default function Home() {
   return (
     <MainContainer>
       <div className="">
-        <h1 className="font-semibold text-4xl mb-4 text-slate-950">
+        <h1 className="font-semibold text-3xl md:text-4xl mb-4 text-slate-950">
           Ryan
-          <span className="block text-slate-500 font-normal text-2xl">
+          <span className="block text-slate-500 font-normal text-xl md:text-2xl">
             Fullstack Developer
           </span>
         </h1>
-        <p>
+        <p className="text-sm md:text-base">
           As a geophysicist turned fullstack developer with 4 years of
           experience. My expertise in ReactJS, Node.js, and PostgreSQL, combined
           with my background in geophysics where I honed my skills in data
@@ -39,7 +40,7 @@ export default function Home() {
       <div className="mt-4">
         <Link href="/experiences">
           <button
-            className="group flex items-center gap-2 border border-slate-200 rounded-md px-4 py-2 bg-slate-200 hover:bg-slate-100 text-slate-950 hover:text-slate-950"
+            className="text-sm md:text-lg group flex items-center gap-2 border border-slate-200 rounded-md px-4 py-2 bg-slate-800 hover:bg-slate-400 text-slate-200 hover:text-slate-800 hover:border-slate-800"
             onClick={() => {
               const consent = localStorage.getItem("analytics_consent");
               if (consent === "true" && window.dataLayer) {
@@ -67,6 +68,8 @@ export default function Home() {
           </button>
         </Link>
       </div>
+      <hr className="my-8 md:my-12 border-t border-slate-400" />
+      <PersonalProject />
     </MainContainer>
   );
 }
