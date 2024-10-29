@@ -1,0 +1,59 @@
+[
+    {
+        "id": 1,
+        "type": "Pertalite",
+        "year": 2024,
+        "prices": [
+            {
+                "monthText": "Jan 24",
+                "price": 7650,
+                "priceText": "Rp 7.650"
+            },
+            {
+                "monthText": "Feb 24",
+                "price": 7650,
+                "priceText": "Rp 7.650"
+            },
+            {
+                "monthText": "Mar 24",
+                "price": 7650,
+                "priceText": "Rp 7.650"
+            },
+            {
+                "monthText": "Apr 24",
+                "price": 7650,
+                "priceText": "Rp 7.650"
+            },
+            {
+                "monthText": "May 24",
+                "price": 7650,
+                "priceText": "Rp 7.650"
+            },
+            {
+                "monthText": "Jun 24",
+                "price": 7650,
+                "priceText": "Rp 7.650"
+            },
+            {
+                "monthText": "Jul 24",
+                "price": 10000,
+                "priceText": "Rp 10.000"
+            },
+            {
+                "monthText": "Aug 24",
+                "price": 10000,
+                "priceText": "Rp 10.000"
+            },
+            {
+                "monthText": "Sep 24",
+                "price": 10000,
+                "priceText": "Rp 10.000"
+            },
+            {
+                "monthText": "Oct 24",
+                "price": 10000,
+                "priceText": "Rp 10.000"
+            }
+        ]
+    }
+]

@@ -17,6 +17,13 @@ const projects = [
     techStack: ["NodeJs", "Express", "PostgreSQL"],
     link: "https://github.com/ryanadhi/promo-playstore-api",
   },
+  {
+    title: "Fuel Price Chart",
+    description:
+      "A simple web app to visualize fuel price data in Jakarta, Indonesia using Chart.js.",
+    techStack: ["NextJs", "Tailwind", "Chart.js"],
+    link: "/fuel-price-chart",
+  },
 ];
 const PersonalProject = () => {
   return (

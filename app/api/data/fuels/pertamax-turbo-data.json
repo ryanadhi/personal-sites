@@ -1,0 +1,59 @@
+[
+    {
+        "id": 1,
+        "type": "Pertamax Turbo",
+        "year": 2024,
+        "prices": [
+            {
+                "monthText": "Jan 24",
+                "price": 14400,
+                "priceText": "Rp 14.400"
+            },
+            {
+                "monthText": "Feb 24",
+                "price": 14400,
+                "priceText": "Rp 14.400"
+            },
+            {
+                "monthText": "Mar 24",
+                "price": 14400,
+                "priceText": "Rp 14.400"
+            },
+            {
+                "monthText": "Apr 24",
+                "price": 14400,
+                "priceText": "Rp 14.400"
+            },
+            {
+                "monthText": "May 24",
+                "price": 14400,
+                "priceText": "Rp 14.400"
+            },
+            {
+                "monthText": "Jun 24",
+                "price": 14400,
+                "priceText": "Rp 14.400"
+            },
+            {
+                "monthText": "Jul 24",
+                "price": 14400,
+                "priceText": "Rp 14.400"
+            },
+            {
+                "monthText": "Aug 24",
+                "price": 15450,
+                "priceText": "Rp 15.450"
+            },
+            {
+                "monthText": "Sep 24",
+                "price": 14470,
+                "priceText": "Rp 14.470"
+            },
+            {
+                "monthText": "Oct 24",
+                "price": 13250,
+                "priceText": "Rp 13.250"
+            }
+        ]
+    }
+]

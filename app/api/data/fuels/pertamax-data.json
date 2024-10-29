@@ -1,0 +1,59 @@
+[
+    {
+        "id": 1,
+        "type": "Pertamax",
+        "year": 2024,
+        "prices": [
+            {
+                "monthText": "Jan 24",
+                "price": 12950,
+                "priceText": "Rp 12.950"
+            },
+            {
+                "monthText": "Feb 24",
+                "price": 12950,
+                "priceText": "Rp 12.950"
+            },
+            {
+                "monthText": "Mar 24",
+                "price": 12950,
+                "priceText": "Rp 12.950"
+            },
+            {
+                "monthText": "Apr 24",
+                "price": 12950,
+                "priceText": "Rp 12.950"
+            },
+            {
+                "monthText": "May 24",
+                "price": 12950,
+                "priceText": "Rp 12.950"
+            },
+            {
+                "monthText": "Jun 24",
+                "price": 12950,
+                "priceText": "Rp 12.950"
+            },
+            {
+                "monthText": "Jul 24",
+                "price": 12950,
+                "priceText": "Rp 12.950"
+            },
+            {
+                "monthText": "Aug 24",
+                "price": 12950,
+                "priceText": "Rp 12.950"
+            },
+            {
+                "monthText": "Sep 24",
+                "price": 12950,
+                "priceText": "Rp 12.950"
+            },
+            {
+                "monthText": "Oct 24",
+                "price": 12100,
+                "priceText": "Rp 12.100"
+            }
+        ]
+    }
+]
