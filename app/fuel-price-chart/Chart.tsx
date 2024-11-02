@@ -80,7 +80,7 @@ const Chart = () => {
   return (
     <div className="w-full">
       {loading && (
-        <div className="flex space-x-2 justify-center items-center bg-white h-72 dark:invert">
+        <div className="flex space-x-2 justify-center items-center bg-white h-72">
           <span className="sr-only">Loading...</span>
           <div className="h-4 w-4 bg-black rounded-full animate-bounce [animation-delay:-0.3s]"></div>
           <div className="h-4 w-4 bg-black rounded-full animate-bounce [animation-delay:-0.15s]"></div>
@@ -97,7 +97,7 @@ const Chart = () => {
               return (
                 <div
                   key={key}
-                  className="bg-white dark:bg-slate-800 p-4 rounded-md shadow-md"
+                  className="bg-slate-100 p-4 rounded-md shadow-md text-slate-800"
                 >
                   <h3 className="font-semibold text-base md:text-lg">
                     {FUEL_TYPES[key as keyof typeof FUEL_TYPES]}
