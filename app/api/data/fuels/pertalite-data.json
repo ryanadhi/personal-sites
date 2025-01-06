@@ -63,6 +63,11 @@
                 "monthText": "Dec 24",
                 "price": 10000,
                 "priceText": "Rp 10.000"
+            },
+            {
+                "monthText": "Jan 25",
+                "price": 10000,
+                "priceText": "Rp 10.000"
             }
         ]
     }
