@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
-import fs from "fs";
-import path from "path";
+import pertaliteRaw from "@/app/api/data/fuels/pertalite-data.json";
+import pertamaxRaw from "@/app/api/data/fuels/pertamax-data.json";
+import pertamaxTurboRaw from "@/app/api/data/fuels/pertamax-turbo-data.json";
 
 interface Price {
   monthText: string;
@@ -10,39 +11,34 @@ interface Price {
 
 interface Fuel {
   id: number;
-  name: string;
   year: number;
   prices: Price[];
 }
+
+export const runtime = "edge";
 
 const YEAR = 2024; // TODO: Hardcoded for now
 
 const getFuelData = (
   type: "pertalite" | "pertamax" | "pertamax-turbo"
 ): number[] => {
-  const filePath = path.join(
-    process.cwd(),
-    `app/api/data/fuels/${type}-data.json`
-  );
+  let fuelData: Fuel[] = [];
 
-  // Check if the file exists
-  if (!fs.existsSync(filePath)) {
-    throw new Error("Data file not found");
+  if (type === "pertalite") {
+    fuelData = pertaliteRaw;
+  } else if (type === "pertamax") {
+    fuelData = pertamaxRaw;
+  } else if (type === "pertamax-turbo") {
+    fuelData = pertamaxTurboRaw;
   }
 
-  const jsonData = fs.readFileSync(filePath, "utf-8");
-  const fuelData: Fuel[] = JSON.parse(jsonData);
-
-  // TODO: Add logic to filter data based on year
   const monthlyData = fuelData.filter((fuel) => fuel.year === YEAR);
 
   if (monthlyData.length === 0) {
     throw new Error("Data not found for the given year");
   }
 
-  const priceData = monthlyData[0].prices.map((price) => price.price);
-
-  return priceData;
+  return monthlyData[0].prices.map((price) => price.price);
 };
 
 export async function GET() {
