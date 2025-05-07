@@ -50,6 +50,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const cfToken = process.env.NEXT_PUBLIC_CF_TOKEN
   return (
     <html lang="en">
       <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID!} />
@@ -62,7 +63,7 @@ export default function RootLayout({
         <Script
           defer
           src="https://static.cloudflareinsights.com/beacon.min.js"
-          data-cf-beacon='{"token": "7fefd3cdc7514fc082debc79c2eb5d1b"}'
+          data-cf-beacon={`{"token": "${cfToken}"}`}
           strategy="afterInteractive"
         />
       </body>

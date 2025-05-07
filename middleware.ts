@@ -12,7 +12,6 @@ export function middleware(request: NextRequest) {
   });
 
   const allowedOrigins = [
-    "http://localhost:3000",
     "https://ryanadhi.tech",
     "https://personal-sites-dor.pages.dev",
   ];
