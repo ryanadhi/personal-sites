@@ -3,6 +3,8 @@ import MainContainer from "../components/MainContainer";
 import type { Metadata } from "next";
 import baseMetadata from "../layout";
 
+export const runtime = "edge";
+
 const experiences = [
   {
     logo: "/dataspark.png",

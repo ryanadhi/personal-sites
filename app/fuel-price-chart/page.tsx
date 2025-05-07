@@ -5,6 +5,8 @@ import Chart from "./Chart";
 
 import MainContainer from "../components/MainContainer";
 
+export const runtime = "edge";
+
 export const metadata: Metadata = {
   ...baseMetadata,
   title: "2024 Jakarta Fuel Price Chart",

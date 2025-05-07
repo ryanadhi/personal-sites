@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import baseMetadata from "../layout";
 import Contact from "./Contact";
 
+export const runtime = "edge";
+
 export const metadata: Metadata = {
   ...baseMetadata,
   title: "Ryan | Contact",

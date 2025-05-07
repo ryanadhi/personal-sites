@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
-import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Analytics } from "@vercel/analytics/react";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
@@ -60,8 +58,6 @@ export default function RootLayout({
           <div className="h-[calc(100vh-4rem)]">{children}</div>
         </div>
         <ConsentBanner />
-        <SpeedInsights />
-        <Analytics />
       </body>
       <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID!} />
     </html>
