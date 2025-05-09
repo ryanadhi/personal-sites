@@ -4,7 +4,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import ConsentBanner from "./components/ConsentBanner";
-import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -60,12 +59,6 @@ export default function RootLayout({
           <div className="h-[calc(100vh-4rem)]">{children}</div>
         </div>
         <ConsentBanner />
-        <Script
-          defer
-          src="https://static.cloudflareinsights.com/beacon.min.js"
-          data-cf-beacon={`{"token": "${cfToken}"}`}
-          strategy="afterInteractive"
-        />
       </body>
       <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID!} />
     </html>
