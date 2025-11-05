@@ -7,10 +7,17 @@ export const runtime = "edge";
 
 const experiences = [
   {
+    logo: "/bp.png",
+    company: "bp",
+    from: "August 2025",
+    to: "Present",
+    title: "Software Engineer",
+  },
+  {
     logo: "/dataspark.png",
     company: "DataSpark",
     from: "October 2022",
-    to: "Present",
+    to: "August 2025",
     title: "Frontend Engineer",
   },
   {
@@ -46,29 +53,13 @@ const ExperiencePage = () => {
       </header>
       <div className="flex flex-col gap-4">
         <p>
-          Currently I am working as a Frontend Engineer at DataSpark in
-          Singapore, where I am helping build innovative data-driven solutions
-          for the telecommunications industry. Before that, I was a Software
-          Engineer at BitHealth, developing healthcare appointment and payment
-          systems that improved patient experiences. My journey in tech began at
-          Mediatropy, where I contributed to creating digital brainstorming
-          tools.
+          I'm a Software Engineer at bp, where I’m part of a global team supporting business needs through scalable and efficient software solutions.
         </p>
         <p>
-          My tech stack is centered around modern web technologies. I specialize
-          in frontend development with{" "}
-          <span className="text-slate-700 font-semibold">ReactJS</span> and{" "}
-          <span className="text-slate-700 font-semibold">Next.js</span>,
-          crafting responsive and intuitive user interfaces. On the backend, I
-          am proficient with{" "}
-          <span className="text-slate-700 font-semibold">Node.js</span> and have
-          recently expanded my skills to include{" "}
-          <span className="text-slate-700 font-semibold">Spring Boot</span>. I
-          am well-versed in database management, particularly with{" "}
-          <span className="text-slate-700 font-semibold">PostgreSQL</span>. This
-          full-stack expertise allows me to build comprehensive web applications
-          from the ground up, ensuring seamless integration between frontend and
-          backend components.
+          Before bp, I worked as a Frontend Engineer at DataSpark in Singapore, building data-driven tools for the telecom industry. Earlier, I helped develop healthcare appointment and payment systems at BitHealth to improve patient experiences. My tech journey started at Mediatropy, where I contributed to digital brainstorming tools for creative teams.
+        </p>
+        <p>
+          I enjoy working with modern web technologies, especially <span className="text-slate-700 font-semibold">ReactJS</span> and <span className="text-slate-700 font-semibold">Next.js</span> on the frontend. On the backend, I’ve used <span className="text-slate-700 font-semibold">Node.js</span> and <span className="text-slate-700 font-semibold">Spring Boot</span>, and I’m currently expanding my skills in <span className="text-slate-700 font-semibold">.NET</span>. I'm also comfortable with database management, particularly <span className="text-slate-700 font-semibold">PostgreSQL</span>, which helps me build well-integrated, end-to-end web applications.
         </p>
       </div>
       <div className="w-full divide-y divide-slate-200 mt-4">
