@@ -53,13 +53,13 @@ const ExperiencePage = () => {
       </header>
       <div className="flex flex-col gap-4">
         <p>
-          I'm a Software Engineer at bp, where I’m part of a global team supporting business needs through scalable and efficient software solutions.
+          I&apos;m a Software Engineer at bp, where I&apos;m part of a global team supporting business needs through scalable and efficient software solutions.
         </p>
         <p>
           Before bp, I worked as a Frontend Engineer at DataSpark in Singapore, building data-driven tools for the telecom industry. Earlier, I helped develop healthcare appointment and payment systems at BitHealth to improve patient experiences. My tech journey started at Mediatropy, where I contributed to digital brainstorming tools for creative teams.
         </p>
         <p>
-          I enjoy working with modern web technologies, especially <span className="text-slate-700 font-semibold">ReactJS</span> and <span className="text-slate-700 font-semibold">Next.js</span> on the frontend. On the backend, I’ve used <span className="text-slate-700 font-semibold">Node.js</span> and <span className="text-slate-700 font-semibold">Spring Boot</span>, and I’m currently expanding my skills in <span className="text-slate-700 font-semibold">.NET</span>. I'm also comfortable with database management, particularly <span className="text-slate-700 font-semibold">PostgreSQL</span>, which helps me build well-integrated, end-to-end web applications.
+          I enjoy working with modern web technologies, especially <span className="text-slate-700 font-semibold">ReactJS</span> and <span className="text-slate-700 font-semibold">Next.js</span> on the frontend. On the backend, I&apos;ve used <span className="text-slate-700 font-semibold">Node.js</span> and <span className="text-slate-700 font-semibold">Spring Boot</span>, and I&apos;m currently expanding my skills in <span className="text-slate-700 font-semibold">.NET</span>. I&apos;m also comfortable with database management, particularly <span className="text-slate-700 font-semibold">PostgreSQL</span>, which helps me build well-integrated, end-to-end web applications.
         </p>
       </div>
       <div className="w-full divide-y divide-slate-200 mt-4">
